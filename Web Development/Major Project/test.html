@@ -1,0 +1,87 @@
+<style>
+    
+    .images-container {
+    position: relative;
+    width: 100%;
+    height: 280px; /* Height of the marquee images */
+    overflow: hidden;
+}
+
+.images marquee img {
+    height: 280px;
+    width: auto; /* Adjusts the width based on the height */
+}
+
+.cards-container {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Allows clicks to pass through to the marquee images */
+}
+
+.card {
+    position: relative;
+    margin: 0 10px;
+    pointer-events: auto; /* Allows interaction with the cards */
+    z-index: 1; /* Ensure cards are on top of marquee images */
+    /* background: rgba(255, 255, 255, 0.8); Slightly transparent background */
+    padding: 10px;
+    /* border-radius: 5px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card img {
+    height: 140px; /* Half the height of the marquee images */
+    display: block;
+    margin: 0 auto;
+}
+
+
+</style>
+
+<div class="images">
+    <marquee behavior="scroll" direction="right" scrollamount="20">
+        <img src="New folder/5298_Sports_-_Bau_under_499_hero_3000._CB554058565_.jpg" alt="Image 1" height="280px">
+        <img src="New folder/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg" alt="Image 2" height="280px">
+        <img src="New folder/HI_HMD_3000_PC-FDFO._CB565898884_.jpg" alt="Image 3" height="280px">
+        <img src="New folder/PC_Hero_2x-toys_1._CB582765723_.jpg" alt="Image 4" height="280px">
+        <img src="New folder/1-1._CB565867124_.jpg" alt="Image 5" height="280px">
+        <img src="New folder/2-1._CB565867124_.jpg" alt="Image 6" height="280px">
+    </marquee>
+</div>
+
+<div class="cards-container">
+    <div class="card">
+        <h2>Revamp your home in style</h2>
+        <br>
+        <img src="New folder/5298_Sports_-_Bau_under_499_hero_3000._CB554058565_.jpg" alt="Image 1" height="140px">
+        <img src="New folder/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg" alt="Image 2" height="140px">
+        <img src="New folder/HI_HMD_3000_PC-FDFO._CB565898884_.jpg" alt="Image 3" height="140px">
+    </div>
+    <div class="card">
+        <h2>Starting ₹199 | Amazon Brands & more</h2>
+        <br>
+        <img src="New folder/PC_Hero_2x-toys_1._CB582765723_.jpg" alt="Image 4" height="140px">
+        <img src="New folder/1-1._CB565867124_.jpg" alt="Image 5" height="140px">
+        <img src="New folder/2-1._CB565867124_.jpg" alt="Image 6" height="140px">
+    </div>
+    <div class="card">
+        <h2>Appliances for your home | Up to 55% off</h2>
+        <br>
+        <img src="New folder/D103625178_DesktopTallHero_3000x1200_V3._CB558389732_.jpg" alt="Image 2" height="140px">
+        <img src="New folder/New folder/01-hd01-Q6-KV-pc-1440x640.webp" alt="Image 8" height="140px">
+        <img src="New folder/5298_Sports_-_Bau_under_499_hero_3000._CB554058565_.jpg" alt="Image 1" height="140px">
+    </div>
+</div>
